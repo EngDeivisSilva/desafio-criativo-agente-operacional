@@ -1,4 +1,8 @@
-![Agente de Atendimento Operacional](capa-agente-atendimento-operacional.jpg)
+<p align="center">
+  <img src="capa-agente-atendimento-operacional.jpg"
+       alt="Agente de Atendimento Operacional"
+       width="700">
+</p>
 # Agente de Atendimento Operacional | Logística Florestal
 
 **Desafio Criativo — Projetando o Prompt de um Agente de Atendimento ao Cliente | DIO**
