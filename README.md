@@ -1,3 +1,4 @@
+![Agente de Atendimento Operacional](images/capa-agente-atendimento-operacional.jpg)
 # Agente de Atendimento Operacional | Logística Florestal
 
 **Desafio Criativo — Projetando o Prompt de um Agente de Atendimento ao Cliente | DIO**
