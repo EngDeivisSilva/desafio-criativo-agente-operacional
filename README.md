@@ -1,71 +1,82 @@
+# Agente de Atendimento Operacional | Logística Florestal
+
 <p align="center">
   <img src="capa-agente-atendimento-operacional%20(2).jpg"
        alt="Agente de Atendimento Operacional"
        width="100%"
        height="350">
 </p>
-# Agente de Atendimento Operacional | Logística Florestal
 
 **Desafio Criativo — Projetando o Prompt de um Agente de Atendimento ao Cliente | DIO**
 
-## Sobre o projeto
+## 🎯 Visão geral
 
-Este projeto apresenta o desenvolvimento de um Agente de Atendimento Operacional para uma empresa de transporte e logística florestal, com atuação simulada por meio de um canal de atendimento via WhatsApp corporativo.
+Este projeto apresenta a concepção de um agente de Inteligência Artificial voltado ao atendimento operacional de uma empresa de transporte e logística florestal.
 
-A proposta é utilizar Engenharia de Prompt para estruturar um agente capaz de interpretar solicitações operacionais, consultar informações de uma base de dados e fornecer respostas objetivas, respeitando regras de negócio, limites de autonomia e critérios de segurança.
+O agente foi projetado para atuar como um canal de consulta via WhatsApp corporativo, auxiliando motoristas, encarregados de campo e equipes operacionais na obtenção de informações sobre viagens programadas e situações da operação.
 
-O cenário foi inspirado em rotinas de um Centro de Controle Operacional (CCO), considerando situações comuns na gestão de transporte florestal.
+## 💡 Objetivo do projeto
 
-## Objetivo
+Desenvolver um prompt estruturado para orientar o comportamento de um agente de IA em um cenário operacional realista, considerando a necessidade de respostas rápidas, consistentes e fundamentadas em uma base de dados.
 
-Desenvolver um prompt estruturado para orientar o comportamento de um agente de IA no atendimento de motoristas, encarregados de campo e equipes operacionais, facilitando o acesso às informações e contribuindo para a agilidade da comunicação operacional.
+A proposta busca demonstrar como a Engenharia de Prompt pode ser aplicada para apoiar processos operacionais, reduzir consultas repetitivas e facilitar o acesso às informações.
 
-## Funcionalidades propostas
+## ⚙️ Funcionalidades propostas
 
-- Consulta de viagens programadas por veículo, motorista, composição ou frente operacional.
-- Identificação de horários previstos e locais de carregamento.
-- Consulta de status das viagens, conforme os registros disponíveis.
-- Tratamento de múltiplas viagens realizadas pelo mesmo veículo no mesmo dia.
-- Validação das datas e dos critérios de consulta.
-- Orientação inicial em situações de atrasos, indisponibilidade de veículos e ocorrências operacionais.
-- Encaminhamento para atendimento humano quando a solicitação ultrapassar os limites de atuação do agente.
+- Consulta de viagens programadas por motorista, veículo ou composição.
+- Identificação de horários, locais de carregamento e frentes de operação.
+- Consulta da situação das viagens conforme os dados disponíveis.
+- Orientação inicial sobre atrasos, indisponibilidade de veículos e problemas nas rotas.
+- Coleta de informações sobre ocorrências operacionais.
+- Encaminhamento de situações que exigem avaliação ou decisão humana.
 
-## Estrutura do projeto
+## 📁 Estrutura do projeto
 
-| Arquivo | Descrição |
-|---|---|
-| `prompt-agente-atendimento-operacional.md` | Prompt principal, contendo contexto, instruções, regras de consulta e limites de atuação do agente. |
-| `base_dados_agente_operacional.xlsx` | Base de dados fictícia utilizada para simular consultas de programação e status de viagens. |
+```text
+desafio-criativo-agente-operacional/
+│
+├── README.md
+├── prompt-agente-atendimento-operacional.md
+├── base_dados_agente_operacional.xlsx
+└── capa-agente-atendimento-operacional (2).jpg
+```
 
-## Tecnologias e recursos utilizados
+## 🛠️ Tecnologias e recursos
 
-- **Inteligência Artificial Generativa:** interpretação de solicitações e geração de respostas.
-- **Engenharia de Prompt:** definição de contexto, instruções, regras e restrições de comportamento.
-- **Markdown (.md):** documentação e estruturação do prompt.
-- **Microsoft Excel (.xlsx):** organização da base de dados utilizada nos testes.
+- **Inteligência Artificial generativa:** interpretação de solicitações e geração de respostas.
+- **Engenharia de Prompt:** definição de instruções, regras e limites de atuação do agente.
+- **Microsoft Excel:** estruturação da base de dados utilizada nas consultas.
+- **GitHub:** armazenamento e documentação do projeto.
 
-## Regras e limites de atuação
+## 🔒 Regras e limitações
 
-O agente foi projetado considerando princípios importantes para aplicações em ambientes operacionais:
+O agente foi projetado considerando princípios de confiabilidade e controle operacional:
 
-- Utilizar exclusivamente os dados disponíveis na base fornecida.
+- Utilizar a base de dados disponibilizada como fonte das consultas.
 - Não inventar informações ou presumir dados ausentes.
-- Verificar todos os registros correspondentes aos critérios da consulta.
-- Não realizar alterações na programação ou na base de dados.
-- Não executar decisões que dependam de autorização da liderança.
-- Encaminhar situações críticas ou fora de sua autonomia para atendimento humano.
+- Não misturar registros de datas diferentes sem solicitação.
+- Não alterar programações ou tomar decisões de responsabilidade da liderança.
+- Encaminhar situações críticas ou que excedam sua autonomia para avaliação humana.
 
-## Como testar
+**Importante:** a base de dados utilizada no projeto contém informações fictícias, criadas exclusivamente para demonstração e testes. O projeto não possui integração automatizada com sistemas corporativos ou plataformas de transporte.
 
-1. Disponibilize o arquivo `base_dados_agente_operacional.xlsx` no ambiente de execução do agente.
-2. Utilize o conteúdo de `prompt-agente-atendimento-operacional.md` como instrução principal.
-3. Realize consultas simuladas sobre viagens, veículos, motoristas, datas e ocorrências.
-4. Verifique se as respostas respeitam os registros da base e as regras definidas no prompt.
+## 🧪 Testes e validação
 
-**Observação:** os arquivos deste repositório constituem os materiais do projeto. A presença da planilha no GitHub não estabelece, por si só, uma integração automática com o agente. A base deve ser disponibilizada no ambiente de execução.
+Foram considerados cenários de consulta para avaliar o comportamento do agente, incluindo:
 
-## Considerações finais
+- Consulta de viagens por veículo.
+- Consulta de programação por motorista.
+- Verificação de múltiplas viagens para o mesmo veículo.
+- Solicitações envolvendo datas diferentes.
+- Consultas sobre informações inexistentes na base.
+- Tratamento de ocorrências e situações que exigem encaminhamento humano.
 
-O projeto demonstra como a Engenharia de Prompt pode ser aplicada a um contexto operacional realista, estruturando um agente de IA com foco em atendimento, consulta de informações, padronização de respostas e respeito aos limites de autonomia.
+## 📌 Considerações finais
 
-A proposta também evidencia o potencial de aplicação da Inteligência Artificial Generativa como apoio à comunicação e à eficiência dos processos logísticos.
+O projeto demonstra uma aplicação prática de Engenharia de Prompt em um contexto de logística florestal, aproximando Inteligência Artificial das necessidades de atendimento e suporte operacional.
+
+A proposta reforça a importância de estruturar instruções claras, estabelecer limites de autonomia e utilizar dados como fundamento para respostas confiáveis.
+
+---
+
+**Projeto desenvolvido para o desafio da DIO — Projetando o Prompt de um Agente de Atendimento ao Cliente.**
