@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="capa-agente-atendimento-operacional.jpg"
+  <img src="capa-agente-atendimento-operacional%20(2).jpg"
        alt="Agente de Atendimento Operacional"
-       width="700">
+       width="100%">
 </p>
 # Agente de Atendimento Operacional | Logística Florestal
 
